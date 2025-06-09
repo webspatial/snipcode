@@ -1,0 +1,9 @@
+html {
+  background-color: transparent;
+  --xr-background-material: translucent;
+  border-radius: 30px;
+
+  body {
+    background-color: transparent;
+  }
+}

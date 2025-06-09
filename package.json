@@ -1,0 +1,50 @@
+{
+  "name": "widget-generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "devAVP": "XR_ENV=avp vite",
+    "sim": "npx webspatial-builder run --base=http://localhost:5173/  --bundle-id=com.webspatial.snipcode",
+    "build-sim": "npm run build && npm run sim-packaged",
+    "sim-packaged": "npx webspatial-builder run  --bundle-id=com.webspatial.snipcode",
+    "device-packaged": "npm run build && npx webspatial-builder build --base=/ --teamId= --bundle-id=com.webspatial.test",
+    "build": "XR_ENV=avp tsc -b && XR_ENV=avp vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@tweenjs/tween.js": "^25.0.0",
+    "@webspatial/builder": "latest",
+    "@webspatial/core-sdk": "latest",
+    "@webspatial/platform-visionos": "latest",
+    "@webspatial/react-sdk": "latest",
+    "@webspatial/vite-plugin": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.503.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^4.1.7",
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/node": "^22.15.18",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.1.0",
+    "tw-animate-css": "^1.2.9",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.32.1",
+    "vite": "^6.3.5"
+  }
+}
