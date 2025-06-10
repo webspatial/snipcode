@@ -15,17 +15,17 @@ importers:
         specifier: ^25.0.0
         version: 25.0.0
       '@webspatial/builder':
-        specifier: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/builder@783
-        version: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/builder@783
+        specifier: latest
+        version: 0.1.21
       '@webspatial/core-sdk':
-        specifier: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783
-        version: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783
+        specifier: latest
+        version: 0.1.21
       '@webspatial/platform-visionos':
-        specifier: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@783
-        version: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@783
+        specifier: latest
+        version: 0.1.21
       '@webspatial/react-sdk':
-        specifier: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/react-sdk@783
-        version: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/react-sdk@783(@webspatial/core-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: latest
+        version: 0.1.21(@webspatial/core-sdk@0.1.21)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@webspatial/vite-plugin':
         specifier: latest
         version: 0.1.8(vite@6.3.5(@types/node@22.15.18)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.39.0))
@@ -1099,31 +1099,22 @@ packages:
   '@webgpu/types@0.1.60':
     resolution: {integrity: sha512-8B/tdfRFKdrnejqmvq95ogp8tf52oZ51p3f4QD5m5Paey/qlX4Rhhy5Y8tgFMi7Ms70HzcMMw3EQjH/jdhTwlA==}
 
-  '@webspatial/builder@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/builder@783':
-    resolution: {tarball: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/builder@783}
-    version: 0.1.19
+  '@webspatial/builder@0.1.21':
+    resolution: {integrity: sha512-vUwwq2gbwwlwAhZ/KiNB4+4/VsaJ2wgfOV6lXNiDTM+LlVb3YR1zD7Sp7LKS8Z1CUTFmsoMzepRhM+04s+AJOQ==}
     engines: {node: '>=14.15.0'}
     hasBin: true
 
-  '@webspatial/core-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783':
-    resolution: {tarball: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783}
-    version: 0.1.19
+  '@webspatial/core-sdk@0.1.21':
+    resolution: {integrity: sha512-xz77MJVzqFGWBArH9LhBXOuTI/mxUB7ZIyVWORDdd/zQQF8Psj9upxnVP0F3dyXDhrsukQkTavZP/euhFIt+/A==}
 
-  '@webspatial/platform-visionos@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@783':
-    resolution: {tarball: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@783}
-    version: 0.1.19
+  '@webspatial/platform-visionos@0.1.21':
+    resolution: {integrity: sha512-GdaOW+uVPiRO0hPmYPqbt0/WFOFJy0IxywSOoqanAPIOzKaougOEhjlGATTLYlPIDVB0WIamI1np9D/m5+5iVw==}
     engines: {node: '>=14.15.0'}
 
-  '@webspatial/platform-visionos@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@dead38fc3a116589fd6e877848beecf51e8a6817':
-    resolution: {tarball: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@dead38fc3a116589fd6e877848beecf51e8a6817}
-    version: 0.1.19
-    engines: {node: '>=14.15.0'}
-
-  '@webspatial/react-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/react-sdk@783':
-    resolution: {tarball: https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/react-sdk@783}
-    version: 0.1.19
+  '@webspatial/react-sdk@0.1.21':
+    resolution: {integrity: sha512-7Fn1QQ+hRDVpgYVRGsh831ibXoRNdT4GGxxi+CW9IGQ8ie9k2lRNVUuRR4C4Ro6w6+FmHcB7I/9HPQyKa8ZNLA==}
     peerDependencies:
-      '@webspatial/core-sdk': 0.1.19
+      '@webspatial/core-sdk': 0.1.21
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
     peerDependenciesMeta:
@@ -3572,10 +3563,10 @@ snapshots:
 
   '@webgpu/types@0.1.60': {}
 
-  '@webspatial/builder@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/builder@783':
+  '@webspatial/builder@0.1.21':
     dependencies:
       '@resvg/resvg-js': 2.6.2
-      '@webspatial/platform-visionos': https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@dead38fc3a116589fd6e877848beecf51e8a6817
+      '@webspatial/platform-visionos': 0.1.21
       cli-progress: 3.12.0
       colors: 1.4.0
       commander: 13.1.0
@@ -3593,17 +3584,15 @@ snapshots:
       - debug
       - encoding
 
-  '@webspatial/core-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783': {}
+  '@webspatial/core-sdk@0.1.21': {}
 
-  '@webspatial/platform-visionos@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@783': {}
+  '@webspatial/platform-visionos@0.1.21': {}
 
-  '@webspatial/platform-visionos@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/platform-visionos@dead38fc3a116589fd6e877848beecf51e8a6817': {}
-
-  '@webspatial/react-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/react-sdk@783(@webspatial/core-sdk@https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@webspatial/react-sdk@0.1.21(@webspatial/core-sdk@0.1.21)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@google/model-viewer': 4.1.0(three@0.170.0)
       '@types/three': 0.170.0
-      '@webspatial/core-sdk': https://pkg.pr.new/webspatial/webspatial-sdk/@webspatial/core-sdk@783
+      '@webspatial/core-sdk': 0.1.21
       lodash.isequal: 4.5.0
       three: 0.170.0
     optionalDependencies:

@@ -10,7 +10,18 @@ npm run sim
 
 You can use Safari's Web Inspector to debug.
 
-## Build for packaged production for AVP (all web assets are included in the package)
+## Build for packaged production for AVP simulator (all web assets are included in the package)
+
+**Prerequisite:**
+
+- XCode 14.3
+- VisionOS Simulator installed
+
+```
+npm run build-sim
+```
+
+## Build for packaged production for physical AVP (all web assets are included in the package)
 
 **Prerequisite:**
 
