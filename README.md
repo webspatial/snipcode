@@ -5,7 +5,7 @@ This repo includes some WebSpatial sample codes
 ```bash
 pnpm install
 npm run devAVP
-npm run sim
+npm run sim:dev
 ```
 
 You can use Safari's Web Inspector to debug.
@@ -15,10 +15,14 @@ You can use Safari's Web Inspector to debug.
 **Prerequisite:**
 
 - XCode 14.3
-- VisionOS Simulator installed
+- VisionOS 2.5 Simulator installed
 
 ```
-npm run build-sim
+npm run build
+npm run sim:distpkg
+
+or
+npm run build:sim:distpkg
 ```
 
 ## Build for packaged production for physical AVP (all web assets are included in the package)
@@ -27,6 +31,9 @@ npm run build-sim
 
 - XCode 14.3
 - Knowledge of XCode Apple Developer Account Configuration
+- copy .env to .env.local and configure APPLE_TEAM_ID and BUNDLE_ID
+  -- You need APPLE_TEAM_ID to publish a visionOS app to App Store.
+  -- the BUNDLE_ID should be unique
 
 Step1: build web assets.
 **Note:**
@@ -41,8 +48,14 @@ Step1: build web assets.
 run the following command to build for packaged production for AVP
 
 ```bash
-npm run device-packaged
+npm run build
+npm run ipa:distpkg
+
+or
+npm run build:ipa:distpkg
 ```
+
+the SnipCode.ipa file will be located at build folder
 
 Step2: If you failed to build, you can try to build with XCode manually.
 
